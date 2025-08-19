@@ -1,0 +1,107 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #feac5e, #c779d0, #4bc0c8);
+    color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 90vh; /* reduced height scaling */
+    backdrop-filter: blur(8px);
+}
+
+/* Left Profile */
+.profile {
+    flex: 1;
+    max-width: 270px; /* was 300px */
+    height: 675px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 27px; /* was 30px */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 9px; /* was 10px */
+    border-bottom-right-radius: 9px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img {
+    width: 173px; /* was 140px */
+    height: 250px; /* was 180px */
+    border-radius: 10%;
+    border-top-right-radius: 1%;
+    border: 2.7px solid white; /* was 3px */
+    margin-bottom: 13px; /* was 15px */
+    transition: transform 0.3s ease;
+}
+
+.profile h1 {
+    font-size: 1.26rem; /* was 1.4rem */
+    margin: 9px 0 4px;
+}
+
+.profile p {
+    font-size: 0.81rem; /* was 0.9rem */
+    opacity: 0.8;
+}
+
+/* Hover Effects for Profile */
+.profile:hover {
+    transform: translateY(-2.5px);
+    box-shadow: 0 9px 22px rgba(0,0,0,0.3);
+}
+.profile:hover img {
+    transform: scale(1.01);
+}
+
+/* Main Details */
+.details {
+    flex: 3;
+    padding: 30px; /* was 40px */
+    padding-bottom: 0;
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 18px; /* was 20px */
+    border-radius: 10.8px; /* was 12px */
+    margin-bottom: 18px; /* was 20px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Lift Effect */
+.section:hover {
+    transform: translateY(-4.5px);
+    box-shadow: 0 9px 22px rgba(0,0,0,0.3);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 1.08rem; /* was 1.2rem */
+    display: flex;
+    align-items: center;
+    gap: 7px; /* was 8px */
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 7px; /* was 8px */
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section li {
+    padding: 7px 0; /* was 8px */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.855rem; /* was 0.95rem */
+}
+
+.section li:last-child {
+    border-bottom: none;
+}

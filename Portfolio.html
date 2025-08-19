@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio - Ojas Dhenge</title>
+<link rel="stylesheet" href="Portfolio.css">
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Profile Panel -->
+    <aside class="profile">
+        <img src="Photo.jpg" alt="Profile Picture">
+        <h1>Ojas Damodhar Dhenge</h1>
+        <p>Currently 2nd Year B.Tech CSE Student</p>
+        <p><i class="fas fa-envelope"></i> Email: ojasdhenge@gmail.com</p>
+        <p><i class="fas fa-map-pin"></i> Location: Nagpur, Maharashtra, India</p>
+    </aside>
+
+    <!-- Main Details Section -->
+    <main class="details">
+        <section class="section">
+            <h2><i class="fas fa-school"></i> School Details</h2>
+            <ul>
+                <li><strong>Our Own Indian School</strong> — Al-Quoz, Dubai | 2010–2027 (KG1-Grade 5) | Grade: A1</li>
+                <li><strong>Indian High School</strong> — Oud Mehta, Dubai | 2017–2019 (Grade 6-7) | Grade: A2</li>
+                <li><strong>Prerna Public School</strong> — Nagpur, Maharashtra | 2019–2022 (Grade 8-10) | 88%</li>
+                <li><strong>School Of Scholars</strong> — Nagpur, Maharashtra | 2022–2024 (Grade 11-12) | 88%</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-university"></i> College Details</h2>
+            <ul>
+                <li><strong>College Name:</strong> Indian Institute of Information Technology, Sonepat</li>
+                <li><strong>Degree:</strong> Bachelors Of Technology In Computer Science and Engineering</li>
+                <li><strong>Year:</strong> 2nd Year</li>
+                <li><strong>CGPA:</strong> 9.35</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <ul>
+                <li>🏆 Won 1st Place in International Mathematics Olympiad (School-Level)</li>
+                <li>🏆 Won 1st Place in Intra-Level Origami Competition</li>
+                <li>🥈 Won 2nd Place in International English Olympiad (School-Level)</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio - Ojas Dhenge</title>
+<link rel="stylesheet" href="Portfolio.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="profile">
+        <img src="Photo.jpg" alt="Profile Picture">
+        <h1>Ojas Damodhar Dhenge</h1>
+        <p>Currently 2nd Year B.Tech CSE Student</p>
+        <p><i class="fas fa-envelope"></i> ojasdhenge@gmail.com</p>
+        <p><i class="fas fa-map-pin"></i> Nagpur, Maharashtra, India</p>
+    </aside>
+
+    <main class="details">
+        <section class="section">
+            <h2><i class="fas fa-school"></i> School Details</h2>
+            <ul id="school-list"></ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-university"></i> College Details</h2>
+            <ul id="college-list"></ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <ul id="achievements-list"></ul>
+        </section>
+    </main>
+</div>
+
+<script>
+async function loadSchools() {
+    const res = await fetch("http://localhost:8080/schools");
+    const data = await res.json();
+    document.getElementById("school-list").innerHTML = data.map(s =>
+        `<li><strong>${s[1]}</strong> — ${s[2]} | ${s[3]}–${s[4]} | Grade: ${s[5]}</li>`
+    ).join("");
+}
+
+async function loadCollege() {
+    const res = await fetch("http://localhost:8080/college");
+    const data = await res.json();
+    document.getElementById("college-list").innerHTML = data.map(c =>
+        `<li><strong>${c[1]}</strong> — ${c[2]} | Year: ${c[3]} | CGPA: ${c[4]}</li>`
+    ).join("");
+}
+
+async function loadAchievements() {
+    const res = await fetch("http://localhost:8080/achievements");
+    const data = await res.json();
+    document.getElementById("achievements-list").innerHTML = data.map(a =>
+        `<li>🏆 ${a[2]} - ${a[1]}</li>`
+    ).join("");
+}
+
+loadSchools();
+loadCollege();
+loadAchievements();
+</script>
+
+</body>
+</html>
+-->
